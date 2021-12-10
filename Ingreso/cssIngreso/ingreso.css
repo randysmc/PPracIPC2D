@@ -1,29 +1,29 @@
 html {
-    background-color: brown;
+    background-color: rgb(13, 7, 90);
     min-height: 1000px;
     font-family: "helvetica neue";
-    background: url(fondo.png), #bd0808;
-    background: url(fondo.png),
-      -webkit-gradient(linear, right top, left top, from(#1d0000), to(#4b0101));
-    background: url(fondo.png),
-      linear-gradient(to left, #500101, #330104);
+    background: url(fondo.jpg), rgb(4, 2, 73);
+    background: url(fondo.jpg),
+      -webkit-gradient(linear, right top, left top, from(#e1deec), to(#050505));
+    background: url(fondo.jpg),
+      linear-gradient(to left, #1f036b, #77060e);
   }
   
   h1 {
-    color: #fff;
+    color: rgb(226, 236, 240);
     padding: 10px;
   }
   
   .contenedor {
     max-width: 400px;
     margin: 50px auto;
-    background: white;
+    background: rgb(5, 158, 163);
     border-radius: 5px;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px -5px rgba(233, 227, 227, 0.3);
   }
   
   #cabecero {
-    background-color: #3f51b5;
+    background-color: #0a0861;
     text-align: center;
   }
   
@@ -47,7 +47,7 @@ html {
     padding: 20px;
     font-size: 20px;
     font-weight: 200;
-    color: #00204a;
+    color: #0160db;
   }
   
   form {
@@ -56,33 +56,46 @@ html {
   }
   
   button {
-    min-height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    min-height: 100px;
+    width: 100px;
+    border-radius: 200%;
     border-color: transparent;
-    background-color: #3f51b5;
+    background-color: #031c7c;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 6px;
-    border-width: 0;
+    border-width: 1;
   }
   
   input[type="text"] {
     text-align: center;
-    height: 60px;
+    height: 25px;
     top: 10px;
-    border: none;
+    border-color: #77060e;
     background: transparent;
     font-weight: 200;
     width: 40%;
+    color: #e1deec;
+  }
+
+  input[type="number"]{
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border-color: #77060e;
+    background: transparent;
+    font-weight: 200;
+    width: 40%;
+    color: #080120;
+    
   }
   
   input[type="text"]:focus {
     outline: none;
-    box-shadow: inset 0 -3px 0 0 #3f51b5;
+    box-shadow: inset 0 -3px 0 0 #e60707;
   }
   
   ::placeholder {
-    color: grey;
+    color: rgb(5, 0, 0);
     opacity: 1;
   }

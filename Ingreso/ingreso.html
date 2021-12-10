@@ -7,12 +7,53 @@
     <title>Ingreso</title>
     <link href="cssIngreso/ingreso.css" rel="stylesheet"/>
 </head>
-<body>
+<body onload="mostrarPersonas()">
     <div class="contenedor" id='cabecero'>
         <h1>Listado de personas</h1>
     </div>
-    <script src="jsIngreso/appPersona.js"></script>
-    <script src="jsIngreso/appIngreso.js"></script>
+
+    <div class="contenedor">
+
+        <form id='forma'>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Ingrese su nombre</label>
+                <input type="text" class="form-control" 
+                placeholder=Nombre" id="nombre"/>
+              </div>
+              <div class="mb-3">
+                <label for="apellido" class="form-label">Ingrese su Apellido</label>
+                <input type="text" class="form-control" 
+                placeholder="Apellido" id="apellido"/>
+              </div>
+              <div class="mb-3">
+                <label for="cui" class="form-label">Ingrese su CUI</label>
+                <input type="number" class="form-control" 
+                placeholder="CUI" id="cui"/>
+              </div>
+              <div class="mb-3">
+                <label for="depto" class="form-label">Ingrese su departamento</label>
+                <input type="text" class="form-control" 
+                placeholder="Departamento" id="depto"/>
+              </div>
+              <div style="text-align: center;">
+                <button style="cursor: pointer" onclick="agregarPersona()">Agregar</button>
+            </div>
+
+        </form>
+        
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">
+            <ul id='personas'>
+                <!--<li>Juan Perez</li>-->
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="jsIngreso/persona.js"></script>
+    <script src="jsIngreso/app.js"></script>
     
 
 </body>
